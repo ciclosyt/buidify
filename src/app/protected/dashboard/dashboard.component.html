@@ -1,0 +1,31 @@
+<div class="container-fluid">
+<div class="row">
+    <nav class="navbar navbar-dark bg-dark text-light">
+        <div class="col"> <span>User: </span>  {{ usuario.name }}</div>
+         <div class="col"><span class="float-end">Email: {{ usuario.email }}</span> 
+        </div>
+        <div class="col">
+                <button class="btn btn-primary float-end"
+                        (click)="logout()">
+                     Logout
+                </button>
+         </div>
+      </nav>
+    
+</div>
+<div class="row">
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button" (click)="info()">Obtener informacion</button>
+      </div>
+</div>
+<div class="row">
+    
+    
+</div>
+
+<div class="row">
+    <pre>{{ servicio | json }}</pre>
+</div>
+
+
+</div>
